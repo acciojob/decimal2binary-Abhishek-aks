@@ -4,7 +4,7 @@ function decimalToBinary(num) {
 	while (num > 0){
 		let d1 = num%2;            // remainder
 		num =  Math.Floor(num/2);  // quotient
-		b += d1;
+		b = d1 +b;
 	}
 	return b;
   
