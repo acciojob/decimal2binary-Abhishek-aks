@@ -1,13 +1,11 @@
 function decimalToBinary(num) {
   //Write you code here for binary conversion
-	let b ="";                // Empty element
+	let binary ="";                // Empty element
 	while (num > 0){
-		let d1 = num%2;            // remainder
-		num =  Math.floor(num/2);  // quotient
-		b = d1 + String(b);
+		binary = (num%2)+ binary;      // adding remainder
+		num =  Math.floor(num/2);      // quotient
 	}
 	return b;
-  
 }
 
 window.decimalToBinary = decimalToBinary;
