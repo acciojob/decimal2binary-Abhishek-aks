@@ -5,7 +5,7 @@ function decimalToBinary(num) {
 		binary = (num%2)+ binary;      // adding remainder
 		num =  Math.floor(num/2);      // quotient
 	}
-	return b;
+	return binary;
 }
 
 window.decimalToBinary = decimalToBinary;
